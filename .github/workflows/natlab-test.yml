@@ -29,7 +29,6 @@ on:
     types: [labeled, synchronize, reopened]
   schedule:
     # Every 12 hours, off-the-hour to avoid GitHub's :00 cron-stampede window.
-    - cron: "23 3,15 * * *"
 
 jobs:
   # prepare warms the per-workflow-run caches (gokrazy image, cloud VM
